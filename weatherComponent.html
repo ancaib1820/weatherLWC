@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Weather Details">
+        <div class="slds-p-horizontal_small">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">{description}</p>
+                            <div class="weather-icon">
+                                <img src={iconUrl} alt="Weather Icon" />
+                            </div>
+                            <p class="card-text">{temperature}°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-card title="Update Billing Address">
+                        <div class="slds-p-horizontal_small">
+                            <lightning-input label="Street" value={street} onchange={handleStreetChange}></lightning-input>
+                            <lightning-input label="City" value={city} onchange={handleCityChange}></lightning-input>
+                            <lightning-input label="State" value={state} onchange={handleStateChange}></lightning-input>
+                            <lightning-input label="Postal Code" value={postalCode} onchange={handlePostalCodeChange}></lightning-input>
+                            <lightning-input label="Country" value={country} onchange={handleCountryChange}></lightning-input>
+                            <lightning-button label="Save" onclick={handleSave}></lightning-button>
+                        </div>
+                    </lightning-card>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

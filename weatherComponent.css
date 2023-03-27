@@ -1,0 +1,22 @@
+.card {
+display: flex;
+}
+
+.card-text {
+font-size: 24px;
+}
+
+.weather-icon {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 8px;
+}
+
+.weather-icon img {
+margin-right: 8px;
+}
+
+.temperature {
+font-size: 24px;
+}
